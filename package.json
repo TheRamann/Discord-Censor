@@ -6,7 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["censor", "censorify", "discord", "server", "family", "friendly"],
+  "keywords": [
+    "censor",
+    "censorify",
+    "discord",
+    "server",
+    "family",
+    "friendly"
+  ],
   "author": "https://github.com/TheRamann/",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRamann/discord-censor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheRamann/discord-censor/issues"
+  },
+  "homepage": "https://github.com/TheRamann/discord-censor#readme"
 }
