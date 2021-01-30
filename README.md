@@ -68,6 +68,31 @@ const censored = censor.censor('I am fuckin cursing right now', '🤬')
 console.log(censored) //prints "I am 🤬 cursing right now"
 ```
 
+# Usage in Discord.Js <img src="https://discord.js.org/static/logo-square.png" alt = "✏" width="35px">
+
+Just combine the codes above and use the module in your discord bot. <br>
+For more information, let's see the example code below <br>
+```js
+const censor = require(discord-censor);
+
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.once('ready', () => {
+	console.log('Ready!');
+});
+client.on('message', message => {
+    if(censor.check(message.content) == true){                  //Check if message has curses or not
+        const censored = censor.censor(message.content, '🤬')   //Censor the message if they have curses
+        message.channel.send(`${message.author.username} said ${censored}`) //Send the censored version of message
+        message.delete()        //Delete the original of message version which has curses
+    }                           //That's all you have to do to censor messages in discord 💜
+});
+
+client.login('your-token-goes-here');
+```
+
+
 # Like the package? <img src="https://cdn.discordapp.com/emojis/599598716521021441.gif?v=1" alt = "✏" width="35px">
 <a href = "https://www.buymeacoffee.com/TheRamann">
 Support the creator here
