@@ -82,11 +82,11 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 client.on('message', message => {
-    if(censor.check(message.content) == true){                  //Check if message has curses or not
-        const censored = censor.censor(message.content, '🤬')   //Censor the message if they have curses
+    if(censor.check(message.content) == true){                 		       //Check if message has curses or not
+        const censored = censor.censor(message.content, '🤬')   	     //Censor the message if they have curses
         message.channel.send(`${message.author.username} said ${censored}`) //Send the censored version of message
-        message.delete()        //Delete the original of message version which has curses
-    }                           //That's all you have to do to censor messages in discord 💜
+        message.delete()        					   //Delete the original of message version which has curses
+    }                           					  //That's all you have to do to censor messages in discord 💜
 });
 
 client.login('your-token-goes-here');
