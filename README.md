@@ -12,10 +12,10 @@ Use this npm package to censor their messages and keep your discord server frien
 # Features
 
 The package has total 3 features <br>
-<a href = "https://www.npmjs.com/package/discord-censor#badwords"><img src="https://cdn.discordapp.com/emojis/762224193793818625.png?v=1" alt = "💜" width="20px">An array for bad words (badwords)<br> </a>
-<a href = "https://www.npmjs.com/package/discord-censor#check"><img src="https://cdn.discordapp.com/emojis/762224193793818625.png?v=1" alt = "💜" width="20px">A function to check for those words in messages (check) </a> <br>
+<a href = "https://www.npmjs.com/package/discord-censor#badwords-array"><img src="https://cdn.discordapp.com/emojis/762224193793818625.png?v=1" alt = "💜" width="20px"> &nbsp; An array for bad words (badwords)<br> </a>
+<a href = "https://www.npmjs.com/package/discord-censor#check"><img src="https://cdn.discordapp.com/emojis/762224193793818625.png?v=1" alt = "💜" width="20px"> &nbsp; A function to check for those words in messages (check) </a> <br>
 <a href = "https://www.npmjs.com/package/discord-censor#censor">
-<img src="https://cdn.discordapp.com/emojis/762224193793818625.png?v=1" alt = "💜" width="20px">A function to replace bad words from messages (censor)<br></a>
+<img src="https://cdn.discordapp.com/emojis/762224193793818625.png?v=1" alt = "💜" width="20px"> &nbsp; A function to replace bad words from messages (censor)<br></a>
 
 # Usage <img src="https://cdn.discordapp.com/emojis/757399420319825950.png?v=1" alt = "✏" width="35px">
 
@@ -24,7 +24,7 @@ You might want to interact with the badwords array to change it's content if nee
 By default, it has 500 about bad words stored in it <br>
 To interact with the array, see the code example below <br>
 ```js
-const censor = require(discord-censor);
+const censor = require('discord-censor');
 
 console.log(censor.badwords) //prints all the badwords in the array
 
@@ -38,14 +38,14 @@ It is a very handy function and returns value as true or false <br>
 To understand it better, see the code example below <br>
 
 ```js
-const censor = require(discord-censor);
+const censor = require('discord-censor');
 
 const CurseOrNot = censor.check("Is it a curse?")
 console.log(CurseOrNot) //Prints False
 ```
 
 ```js
-const censor = require(discord-censor);
+const censor = require('discord-censor');
 
 const CurseOrNot = censor.check("Is it a fuckin curse?")
 console.log(CurseOrNot) //Prints true
@@ -56,13 +56,13 @@ console.log(CurseOrNot) //Prints true
 This function will check for curses and replaces them by itself <br>
 It has two parameters <br>
 ```js
-const censor = require(discord-censor);
+const censor = require('discord-censor');
 
 censor.censor('The string you want to censor', 'censored word will be replaced by this (This parameter is optional)')
 ```
 For more information, let's see the example code below <br>
 ```js
-const censor = require(discord-censor);
+const censor = require('discord-censor');
 
 const censored = censor.censor('I am fuckin cursing right now', '🤬')
 console.log(censored) //prints "I am 🤬 cursing right now"
@@ -73,7 +73,7 @@ console.log(censored) //prints "I am 🤬 cursing right now"
 Just combine the codes above and use the module in your discord bot. <br>
 For more information, let's see the example code below <br>
 ```js
-const censor = require(discord-censor);
+const censor = require('discord-censor');
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
