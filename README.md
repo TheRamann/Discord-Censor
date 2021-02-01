@@ -11,11 +11,13 @@ Use this npm package to censor their messages and keep your discord server frien
 
 # Features
 
-The package has total 3 features <br>
+The package has total 3 features (just click on any of them to know more) <br>
 <a href = "https://www.npmjs.com/package/discord-censor#badwords-array"><img src="https://cdn.discordapp.com/emojis/762224193793818625.png?v=1" alt = "💜" width="20px"> &nbsp; An array for bad words (badwords)<br> </a>
 <a href = "https://www.npmjs.com/package/discord-censor#check"><img src="https://cdn.discordapp.com/emojis/762224193793818625.png?v=1" alt = "💜" width="20px"> &nbsp; A function to check for those words in messages (check) </a> <br>
 <a href = "https://www.npmjs.com/package/discord-censor#censor">
 <img src="https://cdn.discordapp.com/emojis/762224193793818625.png?v=1" alt = "💜" width="20px"> &nbsp; A function to replace bad words from messages (censor)<br></a>
+
+<a href = "https://www.npmjs.com/package/discord-censor#usage-in-discordjs-">This package is tailored to be used with discord.js </a>
 
 # Usage <img src="https://cdn.discordapp.com/emojis/757399420319825950.png?v=1" alt = "✏" width="35px">
 
