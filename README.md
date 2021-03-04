@@ -9,7 +9,7 @@ Use this npm package to censor their messages and keep your discord server frien
     <p><b><a href = "https://classic.yarnpkg.com/en/package/discord-censor"> yarn: </a></p>
         <code>yarn add discord-censor </code>
 
-# Features
+# Features <img src = "https://cdn.discordapp.com/emojis/816591259770552330.gif?v=1" alt = "😌" width = "35px">
 
 The package has total 3 features (just click on any of them to know more) <br>
 
@@ -22,7 +22,7 @@ The package has total 3 features (just click on any of them to know more) <br>
 
 # Usage <img src="https://cdn.discordapp.com/emojis/757399420319825950.png?v=1" alt = "✏" width="35px">
 
-## Check
+## Check <img src = "https://cdn.discordapp.com/emojis/779715156610383892.gif?v=1" width = 22px>
 
 It is a very handy function and returns value as true or false <br>
 To understand it better, see the code example below <br>
@@ -41,7 +41,7 @@ const CurseOrNot = censor.check("Is it a fuckin curse?")
 console.log(CurseOrNot) //Prints true
 ```
 
-## Censor
+## Censor <img src = "https://cdn.discordapp.com/emojis/708868674953543691.gif?v=1" width = "27px">
 
 This function will check for curses and replaces them by itself <br>
 It has two parameters <br>
@@ -58,7 +58,7 @@ const censored = censor.censor('I am fuckin cursing right now', '🤬')
 console.log(censored) //prints "I am 🤬 cursing right now"
 ```
 
-## Badwords (array)
+## Badwords (array) <img src = "https://cdn.discordapp.com/emojis/722735532823543848.gif?v=1" width = "26px">
 You might want to interact with the badwords array to change it's content if needed. <br>
 By default, it has 500 about bad words stored in it <br>
 To interact with the array, see the code example below <br>
