@@ -450,28 +450,34 @@ const badwords = ["4r5e",
     "xxx"];
 // Credits to https://gist.github.com/jamiew for these awesome bad words (yep, awesome)
 
-function check(checkingthismessage) {
-    if (!checkingthismessage) return console.log("Please give me something to check")
-    var somearray = checkingthismessage.split(" ")
-    if (badwords.some(r => somearray.includes(r)) == true) return true
-    else return false
-}
-function censor(checkingthismessage, replacethiswithcensored) {
-    if (!replacethiswithcensored) {
-        replacethiswithcensored = "!!Censored!!"
-    }
-    if (!checkingthismessage) return console.log("Please give me something to check")
-    var somearray = checkingthismessage.split(" ")
-    badwords.some(r => {
-        if (somearray.includes(r) == true) {
-            var index = somearray.indexOf(r);
-            if(index == -1) return console.log("There was an error with the parameter you provided")
-            somearray[index] = replacethiswithcensored
-        }
-    })
+const util = require('./util.js');
 
-    return somearray.join(' ')
+function check(text) {
+    if (typeof text != 'string')
+        throw new Error("Input is not of type string.");
+    const txt = text.toLowerCase();
+    return badwords.some(r => txt.includes(r.toLowerCase()));
 }
+
+function censor(text, censorText) {
+    if (typeof text != 'string')
+        throw new Error("Input is not of type string.");
+    let txt = text.toLowerCase();
+    for (const word of badwords){
+        if(!word || typeof word != 'string') continue;
+        while(true){
+            const index = txt.indexOf(word);
+            if(index < 0) break;
+            const censor = typeof censorText == 'string' ?
+                censorText :
+                '*'.repeat(word.length-1);
+            txt = util.spliceString(txt,index+1,word.length-1,censor);
+            text = util.spliceString(text,index+1,word.length-1,censor);
+        }
+    }
+    return text;
+}
+
 module.exports = {
     badwords: badwords,
     check: check,
