@@ -450,11 +450,11 @@ const badwords = ["4r5e",
     "xxx"];
 // Credits to https://gist.github.com/jamiew for these awesome bad words (yep, awesome)
 
-function check(checkingthismessage) {
-    if (!checkingthismessage) return console.log("Please give me something to check")
-    var somearray = checkingthismessage.split(" ")
-    if (badwords.some(r => somearray.includes(r)) == true) return true
-    else return false
+function check(text) {
+    if (typeof text != 'string')
+        throw new Error("Input is not of type string.");
+    const txt = text.toLowerCase();
+    return badwords.some(r => txt.includes(r.toLowerCase()));
 }
 function censor(checkingthismessage, replacethiswithcensored) {
     if (!replacethiswithcensored) {
@@ -469,7 +469,6 @@ function censor(checkingthismessage, replacethiswithcensored) {
             somearray[index] = replacethiswithcensored
         }
     })
-
     return somearray.join(' ')
 }
 module.exports = {
