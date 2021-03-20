@@ -1,9 +1,9 @@
-<!-- [![Build Status](https://travis-ci.org/TheRamann/discord-emotes.svg?branch=master)](https://travis-ci.org/TheRamann/discord-emotes)
-[![dependencies Status](https://david-dm.org/TheRamann/discord-emotes/status.svg)](https://david-dm.org/TheRamann/discord-emotes)
-[![npm version](https://img.shields.io/npm/v/discord-emotes.svg)](https://www.npmjs.com/package/discord-emotes)
-[![npm downloads](https://img.shields.io/npm/dt/discord-emotes.svg)](https://www.npmjs.com/package/discord-emotes)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/TheRamann/discord-emotes.svg)](https://github.com/TheRamann/discord-emotes)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/02438a0c7e1148c486fdc822d79b1f3d)](https://www.codacy.com/app/TheRamann/discord-emotes) -->
+<!-- [![Build Status](https://travis-ci.org/TheRamann/discord-censor.svg?branch=main)](https://travis-ci.org/TheRamann/discord-censor)
+[![dependencies Status](https://david-dm.org/TheRamann/discord-censor/status.svg)](https://david-dm.org/TheRamann/discord-censor)
+[![npm version](https://img.shields.io/npm/v/discord-censor.svg)](https://www.npmjs.com/package/discord-censor)
+[![npm downloads](https://img.shields.io/npm/dt/discord-censor.svg)](https://www.npmjs.com/package/discord-censor)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/TheRamann/discord-censor.svg)](https://github.com/TheRamann/discord-censor)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/02438a0c7e1148c486fdc822d79b1f3d)](https://www.codacy.com/app/TheRamann/discord-censor) -->
 
 # Discord-Censor
 
