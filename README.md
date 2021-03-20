@@ -61,8 +61,17 @@ For more information, let's see the example code below <br>
 ```js
 const censor = require('discord-censor');
 
-const censored = censor.censor('I am fuckin cursing right now', '🤬')
-console.log(censored) //prints "I am 🤬 cursing right now"
+const censored = censor.censor('I am fuckin cursing right now')
+console.log(censored) //prints "I am f***in cursing right now"
+```
+
+Or if you want to completely remove the word, you can use 2nd parameter of this function
+
+```js
+const censor = require('discord-censor');
+
+const censored = censor.censor('I am fuckin cursing right now', '**curse**')
+console.log(censored) //prints "I am **curse** cursing right now"
 ```
 
 ## Badwords (array) <img src = "https://cdn.discordapp.com/emojis/722735532823543848.gif?v=1" width = "26px">
@@ -92,11 +101,11 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 client.on('message', message => {
-    if(censor.check(message.content) == true){				      //Check if message has curses or not
-        const censored = censor.censor(message.content, '🤬')   	     //Censor the message if they have curses
+    if(censor.check(message.content) == true){				                  //Check if message has curses or not
+        const censored = censor.censor(message.content)   	                 //Censor the message if they have curses
         message.channel.send(`${message.author.username} said ${censored}`) //Send the censored version of message
-        message.delete()        					   //Delete the original of message version which has curses
-    }                           					  //That's all you have to do to censor messages in discord 💜
+        message.delete()        					                       //Delete the original of message version which has curses
+    }                           					                      //That's all you have to do to censor messages in discord 💜
 });
 
 client.login('your-token-goes-here');
