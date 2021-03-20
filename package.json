@@ -1,6 +1,6 @@
 {
   "name": "discord-censor",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Use this npm package to censor member's messages and keep your discord server friendly for all ages",
   "main": "index.js",
   "scripts": {
