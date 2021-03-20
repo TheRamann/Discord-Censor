@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index"
   },
+  "typings": "index.d.ts",
   "keywords": [
     "censor",
     "censorify",
