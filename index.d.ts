@@ -1,3 +1,3 @@
-export const badwords:Array<String>
-export function check(text:String):Boolean
-export function censor(text:String,censorText:String):String
+export const badwords: string[]
+export function check(text: string): boolean
+export function censor(text: string, censorText?: string): string
